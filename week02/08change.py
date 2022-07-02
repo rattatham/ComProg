@@ -1,0 +1,17 @@
+exchange = int(input(""))
+thousand = exchange//1000
+print(f"1000 => {thousand}")
+fivehundred = (exchange-thousand*1000)//500
+print(f"500 => {fivehundred}")
+hundred = (exchange-thousand*1000-fivehundred*500)//100
+print(f"100 => {hundred}")
+fifty = (exchange-thousand*1000-fivehundred*500-hundred*100)//50
+print(f"50 => {fifty}")
+twenty = (exchange-thousand*1000-fivehundred*500-hundred*100-fifty*50)//20
+print(f"20 => {twenty}")
+ten = (exchange-thousand*1000-fivehundred*500-hundred*100-fifty*50-twenty*20)//10
+print(f"10 => {ten}")
+five = (exchange-thousand*1000-fivehundred*500-hundred*100-fifty*50-twenty*20-ten*10)//5
+print(f"5 => {five}")
+one = (exchange-thousand*1000-fivehundred*500-hundred*100-fifty*50-twenty*20-ten*10-five*5)//1
+print(f"1 => {one}")
